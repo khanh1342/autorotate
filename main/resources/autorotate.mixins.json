@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.autorotate.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockItemAccessor",
+    "LivingEntityMixin",
+    "PlayerMixin"
+  ],
+  "client": [
+    "ClientInputAccessor",
+    "EntityMixin",
+    "LocalPlayerMixin",
+    "MultiPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

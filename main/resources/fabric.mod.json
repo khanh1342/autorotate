@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "autorotate",
+  "version": "${version}",
+  "name": "AutoRotate",
+  "description": "Places blocks exactly as the Litematica schematic wants them: right block, right cell, right orientation.",
+  "authors": [
+    "trandv"
+  ],
+  "license": "MIT",
+  "icon": "assets/autorotate/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.autorotate.AutoRotate"
+    ],
+    "modmenu": [
+      "com.autorotate.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "autorotate.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*",
+    "litematica": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
